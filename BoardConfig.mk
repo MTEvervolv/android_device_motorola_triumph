@@ -26,7 +26,7 @@
 
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
-USE_CAMERA_STUB := true
+USE_CAMERA_STUB := false
 
 # Call headers from msm-3.0: needed to build libs in hardware/qcom/display
 TARGET_SPECIFIC_HEADER_PATH := device/motorola/triumph/include
