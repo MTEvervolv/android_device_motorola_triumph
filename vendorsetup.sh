@@ -21,4 +21,4 @@
 # function: add_lunch_combo generic-eng
 
 #add_lunch_combo generic_encore-userdebug
-add_lunch_combo aokp_triumph-userdebug
+add_lunch_combo cm_triumph-userdebug
