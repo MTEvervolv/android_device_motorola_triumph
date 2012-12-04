@@ -92,7 +92,6 @@ BOARD_USES_LEGACY_GRAPHICS := true
 
 # Testing
 BOARD_NEEDS_MEMORYHEAPPMEM := true
-TARGET_NO_HW_VSYNC := true
 
 # USB
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/usb_mass_storage/lun0/file"
