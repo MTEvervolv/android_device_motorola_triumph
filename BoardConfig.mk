@@ -26,7 +26,7 @@
 
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
-USE_CAMERA_STUB := true
+USE_CAMERA_STUB := false
 
 # Call headers from msm-3.0: needed to build libs in hardware/qcom/display
 TARGET_SPECIFIC_HEADER_PATH := device/motorola/triumph/include
@@ -70,6 +70,7 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Camera
 BOARD_USES_HTC_CAMERA := true
+BOARD_USE_CAF_LIBCAMERA := true
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := triumph
@@ -105,6 +106,7 @@ TARGET_USES_GENLOCK := true
 TARGET_GRALLOC_USES_ASHMEM := true
 TARGET_FORCE_CPU_UPLOAD := true
 COMMON_GLOBAL_CFLAGS += -DMISSING_GRALLOC_BUFFERS -DREFRESH_RATE=60 -DQCOM_HARDWARE -DBINDER_COMPAT
+COMMON_GLOBAL_CFLAGS += -DQCOM_LEGACY_OMX
 BOARD_EGL_CFG := vendor/motorola/triumph/system/lib/egl/egl.cfg
 
 # Wifi
