@@ -43,6 +43,7 @@ TARGET_BOARD_PLATFORM := msm7x30
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
+TARGET_DISABLE_ARM_PIE := true
 
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
@@ -90,9 +91,9 @@ TARGET_QCOM_HDMI_OUT := true
 COMMON_GLOBAL_CFLAGS += -DUSES_LEGACY_GRAPHICS
 BOARD_USES_LEGACY_GRAPHICS := true
 
-# Testing
 BOARD_NEEDS_MEMORYHEAPPMEM := true
 TARGET_NO_HW_VSYNC := true
+BOARD_NEEDS_MEMORYHEAPPMEM := true
 
 # USB
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/usb_mass_storage/lun0/file"

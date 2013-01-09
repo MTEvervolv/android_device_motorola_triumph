@@ -150,7 +150,9 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libdivxdrmdecrypt \
     libOmxVdec \
-    libOmxVenc
+    libOmxVenc \
+    libOmxAacEnc \
+    libOmxAmrEnc
 
 # Misc
 PRODUCT_PACKAGES += \
