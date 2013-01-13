@@ -157,6 +157,7 @@ BUILD_KERNEL := true
 # Source
 TARGET_KERNEL_SOURCE := kernel/motorola/triumph
 TARGET_KERNEL_CONFIG := triumph_defconfig
+TARGET_KERNEL_CUSTON_TOOLCHAIN := arm-eabi-4.4.3
 
 #File System
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
