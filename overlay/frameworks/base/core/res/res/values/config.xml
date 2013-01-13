@@ -679,12 +679,6 @@
     <!-- True if WallpaperService is enabled -->
     <bool name="config_enableWallpaperService">true</bool>
 
-    <!-- Package name providing network location support. -->
-    <string name="config_networkLocationProviderPackageName" translatable="false">@null</string>
-
-    <!-- Package name providing geocoder API support. -->
-    <string name="config_geocodeProviderPackageName" translatable="false">@null</string>
-
     <!-- Boolean indicating if current platform supports bluetooth SCO for off call
     use cases -->
     <bool name="config_bluetooth_sco_off_call">true</bool>
@@ -692,10 +686,6 @@
     <!-- Boolean indicating if current platform supports bluetooth wide band
          speech -->
     <bool name="config_bluetooth_wide_band_speech">true</bool>
-
-    <!-- Boolean indicating if current platform supports quick switch-on/off of
-         Bluetooth Module -->
-    <bool name="config_bluetooth_adapter_quick_switch">true</bool>
 
     <!-- The default data-use polling period. -->
     <integer name="config_datause_polling_period_sec">600</integer>
@@ -834,12 +824,6 @@
     <!-- The VoiceMail default value is displayed to my own number if it is true -->
     <bool name="config_telephony_use_own_number_for_voicemail">true</bool>
 
-    <!-- Set additional audio parameters for incall audio
-         Usage: parameter=onstring=offstring
-         Examples: <item>realcall=on=off</item> <item>dualmic_enabled=true=false</item> <item>mic_boost=yes=no</item> -->
-    <string-array name="config_telephony_set_audioparameters" translatable="false">
-    </string-array>
-
     <!-- If this value is true, Sms encoded as octet is decoded by utf8 decoder.
          If false, decoded by Latin decoder. -->
     <bool name="config_sms_utf8_support">false</bool>
@@ -944,11 +928,6 @@
     <!-- Name of the wimax state tracker clas -->
     <string name="config_wimaxStateTrackerClassname" translatable="false"></string>
 
-    <!-- enable screen saver feature -->
-    <bool name="config_enableDreams">false</bool>
-    <!-- Name of screensaver components to look for if none has been chosen by the user -->
-    <string name="config_defaultDreamComponent" translatable="false">com.google.android.deskclock/com.android.deskclock.Screensaver</string>
-
     <!-- Base "touch slop" value used by ViewConfiguration as a
          movement threshold where scrolling should begin. -->
     <dimen name="config_viewConfigurationTouchSlop">8dp</dimen>
@@ -976,16 +955,6 @@
 
     <!-- Workaround for devices with broken keyboards -->
     <bool name="config_forceDisableHardwareKeyboard">false</bool>
-
-    <!-- Flag indicating whether we should enable automatic brightness for
-         the button and keyboard backlights. -->
-    <bool name="config_autoBrightnessButtonKeyboard">true</bool>
-
-    <!-- Path to the library that contains a device specific key handler -->
-    <string name="config_deviceKeyHandlerLib" translatable="false"></string>
-
-    <!-- Name of that key handler class -->
-    <string name="config_deviceKeyHandlerClass" translatable="false"></string>
 
     <!-- Values greater or equal to 0 will enable electronbeam screen-on
          animation with the specified delay (in milliseconds), -1 will disable the animation -->
