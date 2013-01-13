@@ -35,6 +35,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/motorola/triumph/include
 -include vendor/motorola/triumph/BoardConfigVendor.mk
 
 # MSM7x30
+TARGET_ARCH := arm
 TARGET_USES_2G_VM_SPLIT := true
 TARGET_BOOTLOADER_BOARD_NAME := triumph
 TARGET_OTA_ASSERT_DEVICE := triumph,WX435,fb0
