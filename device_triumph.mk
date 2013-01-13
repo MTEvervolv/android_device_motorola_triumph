@@ -124,7 +124,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     gps.triumph \
     lights.triumph \
-    senors.triumph
+    sensors.triumph
 
 # Audio
 PRODUCT_PACKAGES += \
