@@ -129,7 +129,6 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    audio_policy.msm7x30 \
     audio.primary.msm7x30 \
     libaudioutils
 
