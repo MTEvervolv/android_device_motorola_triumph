@@ -17,19 +17,22 @@
 $(call inherit-product, device/motorola/triumph/device_triumph.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/ev/config/common_full_phone.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/cdma.mk)
+$(call inherit-product, vendor/ev/config/cdma.mk)
 
-PRODUCT_NAME := cm_triumph
+PRODUCT_NAME := ev_triumph
 PRODUCT_BRAND := Motorola
 PRODUCT_DEVICE := triumph
 PRODUCT_MODEL := WX435
 PRODUCT_MANUFACTURER := Motorola
 
 # Release name and versioning
-PRODUCT_RELEASE_NAME := Triumph
+PRODUCT_RELEASE_NAPRODUCT_CODENAME := Triumph
+PRODUCT_VERSION_DEVICE_SPECIFIC := pos
+
+PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your Triumph\nPlease visit us at \#evervolv on irc.freenode.net\n------------------------------------------------\n"
 
 UTC_DATE := $(shell date +%s)
 DATE     := $(shell date +%Y%m%d)
@@ -43,3 +46,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_NUMBER=${DATE} \
     BUILD_VERSION_TAGS=release-keys \
     TARGET_BUILD_TYPE=user
+
+# Hot reboot
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/ev/overlay/hot_reboot
+
+# Copy compatible prebuilt files
+PRODUCT_COPY_FILES +=  \
+    vendor/ev/prebuilt/wvga/media/bootanimation.zip:system/media/bootanimation.zip
